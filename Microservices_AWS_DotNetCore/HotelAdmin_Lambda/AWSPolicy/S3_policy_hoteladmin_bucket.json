@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowEveryoneReadOnlyAccess",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": [
+        "s3:ListBucket", // Allows listing of objects in the bucket
+        "s3:GetObject" // Allows getting the objects from the bucket
+      ],
+      "Resource": [
+        "arn:aws:s3:::hoteladmin-bucket", // Apply to the hoteladmin-bucket itself (listing objects)
+        "arn:aws:s3:::hoteladmin-bucket/*" // Apply to all objects inside the hoteladmin-bucket
+      ]
+    },
+    {
+      "Sid": "AllowLambdaWriteAccess",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::your-account-id:role/HotelAdminLambdaExecuteRole" // Restrict access to a specific Lambda role
+      },
+      "Action": [
+        "s3:PutObject", // Allows uploading of objects to the bucket
+        "s3:PutObjectAcl", // Allows modifying object ACL (access control list)
+        "s3:GetObject", // Allows reading objects from the bucket
+        "s3:GetObjectVersion", // Allows reading a specific version of an object
+        "s3:DeleteObject", // Allows deleting objects from the bucket
+        "s3:DeleteObjectVersion" // Allows deleting a specific version of an object
+      ],
+      "Resource": "arn:aws:s3:::hoteladmin-bucket/*" // Apply to all objects within the hoteladmin-bucket
+    }
+  ]
+}
