@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAdmin_Lambda", "HotelAdmin_Lambda\HotelAdmin_Lambda.csproj", "{20EAD9A6-C028-4748-9262-55CF28687DD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20EAD9A6-C028-4748-9262-55CF28687DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EAD9A6-C028-4748-9262-55CF28687DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EAD9A6-C028-4748-9262-55CF28687DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EAD9A6-C028-4748-9262-55CF28687DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87A22A89-5AC3-420E-A813-C5F1D4B04BC9}
+	EndGlobalSection
+EndGlobal
